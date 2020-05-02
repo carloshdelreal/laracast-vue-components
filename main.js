@@ -2,7 +2,7 @@ Vue.component('task-list', {
   template: `
     <div>
       <task v-for="task in tasks">{{ task.task }}</task>
-    <div>
+    </div>
   `,
 
   data() {
@@ -19,7 +19,7 @@ Vue.component('task-list', {
 });
 
 Vue.component('task', {
-  template: '<li><slot></slot></lis>'
+  template: '<li><slot></slot></li>'
 });
 
 new Vue({
